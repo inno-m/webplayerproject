@@ -1,0 +1,449 @@
+/* Playa 2.0 CSS SHEET */
+
+
+
+    /* Default Display on 11 inch Laptop */
+    /* Use Media Queries on desired displays */
+body{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-left: 5%;
+    margin-top: 1%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+/* Menu side */
+.menuside{
+    /* display: block; */
+    /* border: 1px solid white; */
+    height: 100%;
+    width: 20%;
+    background-color: #131312;
+    position: fixed;
+    z-index: 1;
+    left: 1;
+}
+.menuside img{
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 25%;
+}
+
+.menuside h2{
+    color: grey;
+    margin-top: 20px;
+    margin-left: 20px;
+    font-weight: 400;
+    font-family: arial;
+    cursor: pointer;
+    
+}
+
+.menuside .active{
+    color: cornsilk;
+    
+    
+}
+.menuside  h2:hover{
+    color: white;
+   transition: 0.3s ease;
+    
+}
+.menuside .playlistsongs{
+    width: 97%;
+    height: 290px;
+    /* border: 1px solid grey; */
+    background-color: black;
+    margin-top: 10%;
+    margin-left: 1%;
+    
+}
+
+
+.menuside .playlistsongs li{
+    color: #89CFF0;
+    list-style-type: none;
+    /* padding-left: 1%; */
+    margin: 2%;
+    cursor: pointer;
+    font-size: 14px;
+    
+}
+
+.menuside .playlistsongs li:hover{
+    color: white;
+    list-style-type: none;
+    
+    
+}
+
+
+/* Song Side */
+.songside{
+    /* display: block; */
+    /* border: 1px solid white; */
+    height: 245vh;
+    width: 45%;
+    margin-right: 20%;
+}
+
+
+.songside{
+    width: 74.6%;
+    background-color: black;
+    margin-left: 25%;
+}
+
+
+   .songside .content h3{
+    color: white;
+    margin-bottom: 2%;
+    margin-left: 4%;
+    margin-top: 2%;
+    font-size: 16px;
+}
+
+   .songside .boxes{
+    margin-left: 2%;
+    display: flex;
+}
+   .songside .boxes .sec {
+    background-color: #131312;
+    margin-inline: 2%;
+    padding: 10px 20px 10px 20px;
+    cursor: pointer;
+    
+}
+
+   .songside .boxes .sec:hover {
+    background-color: black;
+    padding: 10px 20px 10px 20px;
+    transition: 0.5s ease;
+    
+}
+   .songside .boxes .sec p{
+    color: grey;
+    font-size: 16px;
+    padding-top: 5%;
+}
+   .songside .boxes .sec:hover p{
+    color: whitesmoke;
+    transition: 0.5s ease;
+}
+   .songside .boxes .sec span{
+    color: grey;
+    padding-top: 5%;
+    font-size: 12px;
+}
+   .songside .boxes img{
+    width: 100px;
+    height: 100px;
+}
+
+   .songside .content2{
+    padding-top: 5%;
+}
+
+
+
+
+
+/* Notification Side */
+.notification{
+    /* display: block; */
+    /* border: 1px solid white; */
+    height: 90vh;
+    width: 14%;
+    position: fixed;
+    z-index: 1;
+    right: 4.4%;
+    background-color: black;
+}
+
+.notification #right{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4.4%;
+    margin-top: 1%;
+
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+
+}
+   .notification #right .drop1{
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+} 
+
+   .notification #right .drop2{
+    height: 26px;
+    width: 26px;
+    cursor: pointer;
+} 
+
+   .dropdowncontent{
+    position: absolute;
+    z-index: 1;
+
+    overflow: auto;
+    margin-top: 350px;
+    /* border: 1px solid grey; */
+    background-color: #131312;
+
+    padding: 10px 50px 10px 50px;
+    display: none;  /* set to none till icon clicked*/
+}
+   .notification #right .dropdowncontent2{
+    position: absolute;
+    z-index: 1;
+    overflow: auto;
+    margin-top: 900px;
+    /* border: 1px solid grey; */
+    background-color: #131312;
+    padding: 30px 30px 20px 30px;
+    display: show ;  /* set to none till icon clicked*/
+}
+   .notification #right .dropdowncontent a{
+    text-decoration: none;
+    color: grey;
+    display: block;
+    font-size: 16px;
+    padding-block: 5px;
+    text-align: center;
+}
+   .notification #right .dropdowncontent2 a{
+    text-decoration: none;
+    color: wheat;
+    display: block;
+    font-size: 16px;
+    margin-bottom: 30%;
+    padding-block: 5px;
+    text-align: center;
+}
+   .notification #right .dropdowncontent2 img{
+    margin-left: 25%;
+}
+   .notification #right .dropdowncontent2 p{
+    text-decoration: none;
+    color: gray;
+    display: block;
+    font-size: 12px;
+    padding-block: 5px;
+    text-align: center;
+}
+
+   .notification #right .dropdowncontent a:hover{
+
+    color: white;
+    
+}
+   .notification #right .dropdowncontent2:hover p{
+    color: white;
+}
+
+.show{
+    display: block;  /*this class is added in JS*/
+    transition: 5s ease;
+} 
+
+
+
+
+
+
+
+
+/* Player Side */
+.player{
+    display: block;
+    
+    /* border: 1px solid #89CFF0; */
+    height: 55px;
+    width: 90.5%;
+    
+    /* Style Here */
+    background: linear-gradient(90deg,
+    rgba(0,0,0,1) 10%,
+    rgba(0,0,0,0) 20%,
+    rgba(0,174,202,1) 30%,
+    rgba(0,0,0,0) 120%
+    );
+
+
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+}
+
+.player .bottomnav{
+    height: 5%;
+    width: 100%;
+    background-color: #0000;
+    bottom: 0px;
+    margin-bottom: 200px;
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+   
+}
+
+.player .bottomlinks{
+    padding-top: 1%;
+    
+}
+
+.player .bottomnav img{
+    
+    height: 26px;
+    width: 26px;
+    margin-inline: 20px; /* customize according to screen size*/
+}
+
+.player .bottomnav .songplayer h2{
+    color: white;
+    margin-left: 50%;
+    width: 100%;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* 15 inch x 14 inch laptop */
+@media (min-width:1300px){
+    
+    
+    body{
+        padding: 20px 50px 20px 50px;
+        width: 80%;
+
+
+    }
+    .menuside img {
+        margin-left: 5%;
+        margin-top: 2%;
+        margin-bottom: 55%;
+    }
+    .menuside h2{
+        margin-top: 20px;
+    }
+    .menuside .playlistsongs{
+        width: 97%;
+        /* height: 290px; */
+        height: max-content;
+        border: none;
+        background-color: black;
+        margin-top: 15%;
+        margin-left: 1.5%;
+        
+        
+        
+    }
+    .menuside{
+        width: 18%;
+    }
+
+
+    .songside h3{
+        font-size: 16px;
+    }
+    .songside{
+        margin-right: 0%;
+        /* height: 202vh; */
+        height: max-content;
+        padding-bottom: 9%;
+    }
+    .songside .boxes .sec {
+        border: none;
+        background-color: #131312;
+        margin-inline: 2%;
+        padding: 10px 20px 10px 20px;
+        
+    }
+    .songside .boxes .sec:hover{
+        background-color: black;
+    }
+    .songside .boxes img{
+    width: 100px;
+    height: 100px;
+    }
+
+
+    .notification{
+        /* display: block; */
+        /* border: 1px solid white; */
+        height: 90vh;
+        width: 12%;
+        position: fixed;
+        z-index: 1;
+        right: 12%;
+        background-color: black;
+    }
+
+    .notification #right{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 8%;
+        margin-top: 1%;
+    
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        right: 90px;
+    
+    }
+    .notification #right .dropdowncontent{
+        margin-top: 400px;
+
+    }
+    .notification #right .dropdowncontent a{
+        font-size: 14px;
+        
+    }
+    .notification #right .dropdowncontent2{
+        margin-top: 1210px;
+    }
+
+    .player{
+        display: block;
+        
+        /* border: 1px solid #89CFF0; */
+        height: 55px;
+        width: 79%;
+        /* background: rgb(238, 174,202); */
+        background: linear-gradient(90deg,
+        /* rgba(135,98,114,1) 0%, */
+        rgba(0,0,0,1) 10%,
+        rgba(0,0,0,0) 20%,
+        rgba(0,174,202,1) 30%,
+        rgba(0,0,0,0) 120%
+        );
+        /* background-color: ; */
+        position: fixed;
+        z-index: 1;
+        bottom: 0;
+    }
+    .player .bottomnav img{
+    
+        height: 26px;
+        width: 26px;
+        margin-inline: 20px;
+    }
+    
+    .player .bottomnav .songplayer h2{
+        color: white;
+        margin-left: 50%;
+        width: 100%;
+    }
+
+}
