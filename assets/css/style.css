@@ -451,7 +451,9 @@ body{
 /* 14 inch laptop */
 @media (min-width:769px){
 
-
+    body{
+        background-color: blue;
+    }
 
 
     /* notification */
