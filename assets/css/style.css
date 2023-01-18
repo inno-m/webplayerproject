@@ -337,13 +337,18 @@ body{
         margin-top: 20px;
     }
     .menuside .playlistsongs{
-        width: 97%;
+        width: 16%;
         /* height: 290px; */
         height: max-content;
         border: none;
         background-color: black;
         margin-top: 15%;
-        margin-left: 1.5%;
+        /* margin-left: ; */
+        
+
+        position: fixed;
+        z-index: 1;
+        bottom: 10%;
         
         
         
@@ -411,7 +416,9 @@ body{
         
     }
     .notification #right .dropdowncontent2{
-        margin-top: 1210px;
+        position: fixed;
+        z-index: 1;
+        bottom: 10%;
     }
 
     .player{
@@ -456,6 +463,8 @@ body{
 
     /* notification */
     .notification #right .dropdowncontent2{
-        margin-top: 1150px;
+        position: fixed;
+        z-index: 1;
+        bottom: 10%;
     }
 }
