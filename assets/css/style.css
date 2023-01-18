@@ -449,7 +449,7 @@ body{
 }
 
 /* 14 inch laptop */
-@media (min-width:769px){
+@media (max-width:1000px){
 
     body{
         background-color: blue;
