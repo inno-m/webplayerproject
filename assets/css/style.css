@@ -459,7 +459,9 @@ body{
 @media (min-width:481px){
 
     /* menuside */
-    
+    .menuside h2{
+        margin-bottom: 5%;
+    }
 
 
     /* notification */
