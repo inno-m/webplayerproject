@@ -458,7 +458,10 @@ body{
 /* 14 inch laptop */
 @media (min-width:481px){
 
-    
+    /* menuside */
+    .menuside h2{
+        margin-top: 10px;
+    }
 
 
     /* notification */
