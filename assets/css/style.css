@@ -318,8 +318,8 @@ body{
 
 
 /* MEDIA QUERIES */
-/* 15 inch x 14 inch laptop */
-@media (min-width:1300px){
+/* 15 laptop */
+@media (min-width:1280px){
     
     
     body{
@@ -446,4 +446,16 @@ body{
         width: 100%;
     }
 
+}
+
+/* 14 inch laptop */
+@media (min-width:769px){
+
+
+
+
+    /* notification */
+    .notification #right .dropdowncontent2{
+        margin-top: 1000px;
+    }
 }
