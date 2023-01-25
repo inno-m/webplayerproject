@@ -4,6 +4,12 @@
 
     /* Default Display on 11 inch Laptop */
     /* Use Media Queries on desired displays */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body{
     background-color: black;
     display: flex;
@@ -113,14 +119,13 @@ body{
    .songside .boxes .sec {
     background-color: #131312;
     margin-inline: 2%;
-    padding: 10px 20px 10px 20px;
+    padding: 5px 5px 20px 5px;
     cursor: pointer;
     
 }
 
    .songside .boxes .sec:hover {
     background-color: black;
-    padding: 10px 20px 10px 20px;
     transition: 0.5s ease;
     
 }
@@ -160,7 +165,7 @@ body{
     position: fixed;
     z-index: 1;
     right: 4.4%;
-    background-color: black;
+    
 }
 
 .notification #right{
@@ -320,18 +325,29 @@ body{
 /* MEDIA QUERIES */
 /* 15 laptop */
 @media (min-width:1280px){
-    
+    *{
+        box-sizing: border-box;
+        
+        padding: 0;
+    }
     
     body{
-        padding: 20px 50px 20px 50px;
+        margin-left: 15%;
+        margin-right: 5%;  
         width: 80%;
-
+        /* background-color: #89CFF0; */
+        
 
     }
     .menuside img {
         margin-left: 5%;
         margin-top: 2%;
-        margin-bottom: 55%;
+    
+    }
+    .menuside .heading{
+        position: fixed;
+        bottom: 50%;
+
     }
     .menuside h2{
         margin-top: 20px;
@@ -358,20 +374,21 @@ body{
     }
 
 
-    .songside h3{
+    .songside .content h3{
         font-size: 16px;
     }
     .songside{
         margin-right: 0%;
         /* height: 202vh; */
-        height: max-content;
+        height: fit-content;
         padding-bottom: 9%;
+        width: 45%;
     }
     .songside .boxes .sec {
         border: none;
         background-color: #131312;
-        margin-inline: 2%;
-        padding: 10px 20px 10px 20px;
+        margin-inline: 3%;
+        padding: 5px 5px 20px 5px;
         
     }
     .songside .boxes .sec:hover{
@@ -387,18 +404,17 @@ body{
         /* display: block; */
         /* border: 1px solid white; */
         height: 90vh;
-        width: 12%;
+        width: 10%;
         position: fixed;
         z-index: 1;
-        right: 12%;
-        background-color: black;
+        right: 18%;
+        
+        
     }
 
     .notification #right{
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 8%;
+        
+        margin-right: 12%;
         margin-top: 1%;
     
         position: fixed;
@@ -408,25 +424,34 @@ body{
     
     }
     .notification #right .dropdowncontent{
-        margin-top: 400px;
+        margin-top: 290px;
+        padding: 5px 30px 5px 30px;
 
     }
     .notification #right .dropdowncontent a{
         font-size: 14px;
+        
         
     }
     .notification #right .dropdowncontent2{
         position: fixed;
         z-index: 1;
         bottom: 10%;
+        padding: 5px 10px 5px 10px;
+
     }
+    .notification #right .dropdowncontent2 img{
+        height: 40px;
+        width: 40px;
+    }
+
 
     .player{
         display: block;
         
         /* border: 1px solid #89CFF0; */
         height: 55px;
-        width: 79%;
+        width: 68%;
         /* background: rgb(238, 174,202); */
         background: linear-gradient(90deg,
         /* rgba(135,98,114,1) 0%, */
@@ -455,9 +480,16 @@ body{
 
 }
 
+@media (min-width:769px){
+    body{
+        /* background-color: green; */
+    }
+}
+
 /* 14 inch laptop */
 @media (min-width:481px){
 
+    
     /* menuside */
     .menuside img {
         margin-left: 5%;
@@ -472,4 +504,54 @@ body{
         z-index: 1;
         bottom: 10%;
     }
+}
+
+
+
+
+
+
+/* Phones */
+@media (max-width:480px){
+    body{
+        
+    }
+
+    .menuside{
+        width: fit-content;
+    }
+    .menuside .menucontent{
+        display: none;
+    }
+    
+    .songside{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100% ;
+    }
+
+    .songside .boxes {
+    
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 0;
+            /* padding: 20px 1px; */
+        }
+    .songside .boxes .sec img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .songside .boxes .sec {
+        width: 40%;
+        padding: 1px 1px 5px 1px;
+    }
+}
+
+.dropdowncontent2{
+    display: none;
 }
