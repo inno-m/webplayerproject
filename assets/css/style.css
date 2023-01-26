@@ -11,7 +11,7 @@
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color: blue;
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
@@ -555,9 +555,8 @@ body{
         margin-bottom: 5%;
         width: ;
     }
-    .dropdowncontent2{
-        display: none;
-    }
+    
 }
 
     
+
