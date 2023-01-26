@@ -514,11 +514,14 @@ body{
 /* Phones */
 @media (max-width:480px){
     body{
+        width: 90%;
         
     }
 
     .menuside{
-        width: fit-content;
+        width: 1%;
+        background-color: black;
+        
     }
     .menuside .menucontent{
         display: none;
@@ -539,20 +542,22 @@ body{
             justify-content: space-between;
             flex-wrap: wrap;
             margin: 0;
+            
             /* padding: 20px 1px; */
         }
     .songside .boxes .sec img{
-        height: 60px;
-        width: 60px;
+        height: 90px;
+        width: 90px;
     }
 
     .songside .boxes .sec {
-        width: 40%;
-        padding: 5px 20px 20px 20px;
+        padding: 10px 10px 40px 10px;
         margin-bottom: 5%;
+        width: ;
+    }
+    .dropdowncontent2{
+        display: none;
     }
 }
 
-.dropdowncontent2{
-    display: none;
-}
+    
